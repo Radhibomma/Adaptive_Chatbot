@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.chat-area {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area {
+    margin-top: 10px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.user {
+    background-color: #d1e7dd;
+    align-self: flex-start; /* Align user messages to the left */
+    text-align: left;
+}
+
+.bot {
+    background-color: #f8d7da;
+    align-self: flex-end; /* Align bot messages to the right */
+    text-align: right;
+}
+
+.bot.positive {
+    background-color: #d4edda;
+}
+
+.bot.neutral {
+    background-color: #ffeeba;
+}
+
+.bot.negative {
+    background-color: #f8d7da;
+}
